@@ -1,23 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <nav class="bg-blue-950 text-white">
-      <ul class="flex space-x-11 px-11 py-11">
-        <li class="cursor-pointer">VIEW PROGRAMS</li>
-        <li class="cursor-pointer">EXPLORE OFFERINGS</li>
-        <li class="cursor-pointer">MEET THE FACULTY</li>
-        <li class="cursor-pointer">TAKE THE NEXT STEP</li>
-      </ul>
-    </nav>
-    <div id="image" class="h-600 w-300 flex bg-white">
-      About Us
-      <img src="nurse.avif" class="p-11" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <nav class="bg-blue-950 text-white">
+    <ul class="flex space-x-11 px-11 py-11">
+      <li class="cursor-pointer">VIEW PROGRAMS</li>
+      <li class="cursor-pointer">EXPLORE OFFERINGS</li>
+      <li class="cursor-pointer">MEET THE FACULTY</li>
+      <li class="cursor-pointer">TAKE THE NEXT STEP</li>
+    </ul>
+  </nav>
+  <div>
+    <h2 class="mt-3 ml-6 text-2xl "><span class="text-blue-400">About</span> Us</h2>
+    <p class="ml-6 text-sm-1xl text-gray-400 ">Description text here...</p>
+  </div>
+
+  <div class="flex flex-col-reverse md:flex-row items-center md:items-start gap-8">
+    <div class=" mt-3 ml-6  md:w-1/3">
+      <img src="nurse.avif" alt="Nurse">
     </div>
-  </body>
-</html> 
+    <div class="text-sm-1xl">
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat cupiditate veniam facere, nobis, illo
+        corrupti facilis neque rem, impedit error laborum cumque earum voluptates animi nam voluptatibus maxime nihil
+        nesciunt!</p>
+      <div class="mt-6">
+        <button class="bg-transparent hover:bg-red-500 text-black font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded-full">
+          View More
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class=" flex flex-col-reverse md:flex-row items-center md:items-start">
+
+  <div class=" mt-4 ml-6 mb-6 max-w-sm rounded overflow-hidden shadow-lg">
+    <img class="w-full" src="nurse.avif" alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    </div>
+   </div>
+   <div class=" mt-4 ml-6 mb-6 max-w-sm rounded overflow-hidden shadow-lg">
+    <img class="w-full" src="nurse.avif" alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    </div>
+   </div>
+   <div class=" mt-4 ml-6 mb-6 max-w-sm rounded overflow-hidden shadow-lg">
+    <img class="w-full" src="nurse.avif" alt="Sunset in the mountains">
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+    </div>
+   </div>
+  </div>
+  </div>
+    
+  
+</body>
+
+</html>
