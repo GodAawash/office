@@ -5,19 +5,427 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
+
+  <!-- drop down -->
+  <!-- <div class="relative">
+  
+  <button class="bg-blue-950 text-white px-4 py-2 rounded-md sm:hidden ">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+
+ Dropdown Menu (Visible only on small screens) -->
+  <!-- <div class="absolute left-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg hidden">
+    <ul>
+      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">VIEW PROGRAMS</li>
+      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">EXPLORE OFFERINGS</li>
+      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">MEET THE FACULTY</li>
+      <li class="px-4 py-2 hover:bg-gray-100 cursor-pointer">TAKE THE NEXT STEP</li>
+    </ul>
+  </div>
+</div> -->
+  <div class="relative w-full h-[500px] overflow-hidden">
+    <img src="images.png" class="object-contain w-full h-full sm:flex-col-1" />
+  </div>
+
   <body>
-    <nav class="bg-blue-950 text-white">
-      <ul class="flex space-x-11 px-11 py-11">
-        <li class="cursor-pointer">VIEW PROGRAMS</li>
-        <li class="cursor-pointer">EXPLORE OFFERINGS</li>
-        <li class="cursor-pointer">MEET THE FACULTY</li>
-        <li class="cursor-pointer">TAKE THE NEXT STEP</li>
-      </ul>
-    </nav>
-    <div id="image" class="h-600 w-300 flex bg-white">
-      About Us
-      <img src="nurse.avif" class="p-11" />
+    <!-- navigation -->
+    <div class="sm:flex-row-4 lg:max-w-full flex justify-center">
+      <nav class="bg-blue-950 text-white">
+        <ul
+          class="flex flex-col sm:flex-row justify-center sm:space-x-11 px-6 sm:px-11 py-6 sm:py-11 space-y-4 sm:space-y-0 sm: pt-5"
+        >
+          <li class="cursor-pointer">VIEW PROGRAMS</li>
+          <li class="cursor-pointer">EXPLORE OFFERINGS</li>
+          <li class="cursor-pointer">MEET THE FACULTY</li>
+          <li class="cursor-pointer">TAKE THE NEXT STEP</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- about us -->
+
+    <div
+      class="flex flex-row flex-wrap lg:flex-nowrap items-center justify-end w-full sm:flex-row"
+    >
+      <div class="flex w-full -mt-36">
+        <img
+          src="nurse.avif"
+          alt="Nurse"
+          class="rounded-lg hover:scale-10 hover:shadow-2xl transition duration-300 mx-auto lg:w-2/3"
+        />
+      </div>
+      <div class="flex flex-col m-4 lg:p-8 w-full">
+        <h2 class="mt-3 ml-6 text-2xl">
+          <span class="text-blue-400">About</span> Us
+        </h2>
+        <p class="ml-6 text-sm-1xl text-gray-400">Description text here...</p>
+        <p class="text-justify pt-6">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
+          cupiditate veniam facere, nobis, illo corrupti facilis neque rem,
+          impedit error laborum cumque earum voluptates animi nam voluptatibus
+          maxime nihil nesciunt!Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Repellat cupiditate veniam facere, nobis, illo
+          corrupti facilis neque rem, impedit error laborum cumque earum
+          voluptates animi nam voluptatibus maxime nihil nesciunt!Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Repellat cupiditate
+          veniam facere, nobis, illo corrupti facilis neque rem, impedit error
+          laborum cumque earum voluptates animi nam voluptatibus maxime nihil
+          nesciunt!Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Repellat cupiditate veniam facere, nobis, illo corrupti facilis neque
+          rem, impedit error laborum cumque earum voluptates animi nam
+          voluptatibus maxime nihil nesciunt!Lorem ipsum dolor, sit amet
+          consectetur adipisicing elit. Repellat cupiditate veniam facere,
+          nobis, illo corrupti facilis neque rem, impedit error laborum cumque
+          earum voluptates animi nam voluptatibus maxime nihil nesciunt!
+        </p>
+        <div>
+          <button
+            class="mt-6 bg-transparent hover:bg-red-500 text-black font-semibold hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded-full"
+          >
+            View More
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- service cateogry -->
+    <div class="grid lg:grid-cols-6 sm:grid-cols-1 p-11 gap-5 content-stretch">
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg w-56 hover:scale-[1.1] ease-in duration-300"
+      >
+        <div class="px-6 py-4 bg-blue-800 min-h-full">
+          <div class="font-bold text-xl mb-2 text-white">
+            <h3>Major</h3>
+            <h2>Public Health</h2>
+          </div>
+          <i
+            class="fa-solid fa-circle-chevron-right fa-lg flex justify-end mt-16"
+            style="color: #f2eeee"
+          ></i>
+        </div>
+      </div>
+
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg w-56 hover:scale-[1.1] ease-in duration-300"
+      >
+        <div class="px-6 py-4 bg-blue-400 min-h-full">
+          <div class="font-bold text-xl mb-2 text-white">
+            <h4>Major</h4>
+            <h2>Public Health</h2>
+            <h3 class="text-2xl">Free serving</h3>
+          </div>
+          <i
+            class="fa-solid fa-circle-chevron-right fa-lg flex justify-end mt-8"
+            style="color: #f2eeee"
+          ></i>
+        </div>
+      </div>
+
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg w-56 hover:scale-[1.1] ease-in duration-300"
+      >
+        <div class="px-6 py-4 bg-blue-950 min-h-full">
+          <div class="font-bold text-xl mb-2 text-white">
+            <h3>Minor</h3>
+            <h2>Public Health</h2>
+          </div>
+          <i
+            class="fa-solid fa-circle-chevron-right fa-lg flex justify-end mt-16"
+            style="color: #f2eeee"
+          ></i>
+        </div>
+      </div>
+
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg w-56 hover:scale-[1.1] ease-in duration-300"
+      >
+        <div class="px-6 py-4 bg-blue-800 min-h-full">
+          <div class="font-bold text-xl mb-2 text-white">
+            <h3>Major</h3>
+            <h2>Public Health</h2>
+          </div>
+          <i
+            class="fa-solid fa-circle-chevron-right fa-lg flex justify-end mt-16"
+            style="color: #f2eeee"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg w-56 hover:scale-[1.1] ease-in duration-300"
+      >
+        <div class="px-6 py-4 bg-blue-800 min-h-full">
+          <div class="font-bold mb-2 text-white">
+            <h3 class="h3">Major</h3>
+            <h2 class="h2 text-2xl">Public Health</h2>
+            Pre-nursing
+          </div>
+          <i
+            class="fa-solid fa-circle-chevron-right fa-lg flex justify-end mt-10"
+            style="color: #f2eeee"
+          ></i>
+        </div>
+      </div>
+      <div
+        class="max-w-sm rounded overflow-hidden shadow-lg w-56 hover:scale-[1.1] ease-in duration-300"
+      >
+        <div class="px-6 py-4 bg-blue-800 min-h-full">
+          <div class="font-bold text-xl mb-2 text-white">
+            <h3>Minor</h3>
+            <h2>Public Health</h2>
+          </div>
+          <i
+            class="fa-solid fa-circle-chevron-right fa-lg flex justify-end mt-16"
+            style="color: #f2eeee"
+          ></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div class="grid auto-rows-fr lg:grid-cols-4 sm:grid-cols-1 lg:mx-20 gap-5">
+      <div class="max-width-sm rounded overflow-hidden shadow-lg">
+        <img class="w-auto" src="/nurse.avif" alt="Sunset in the mountains" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-lg mb-2 text-gray-500">Health</div>
+          <p class="text-2xl">Asbestos Awareness</p>
+          <div class="flex justify-between mt-4">
+            <div>
+              <i class="fa-regular fa-clock"></i>
+              2-3 hrs
+            </div>
+            <div>
+              <i class="fa-solid fa-graduation-cap"></i>
+              30,563 learners
+            </div>
+          </div>
+        </div>
+        <div class="ml-4 mr-4 mb-4 flex justify-between">
+          <span
+            class="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer"
+            >Apply Now</span
+          >
+          <span
+            class="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer"
+            >Start Learning</span
+          >
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4 bg-white">
+          <div class="font-bold text-xl mb-2 text-black">
+            <p>
+              HACCP Food Safety System for Resturants and Other Catering
+              Services
+            </p>
+            <div class="flex justify-between mt-3">
+              <div class="text-gray-500 text-lg">
+                <i class="fa-regular fa-clock text-gray-500 text-lg"></i>
+                3-4 hrs
+              </div>
+              <div class="text-gray-500 text-lg">
+                <i class="fa-solid fa-graduation-cap text-gray-500 text-lg"></i>
+                89,221 learners
+              </div>
+            </div>
+            <div class="mt-3 text-lg">
+              <p class="underline text-gray-500 text-lg">
+                By mokhtar Harb Abd-El-Khalek
+              </p>
+            </div>
+            <div class="text-gray-500 text-lg mt-4 w-15">
+              You Will Learn How To
+              <div>
+                <ul class="list-none space-y-2">
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Define the "catering
+                    industry" and its different type
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Discuss the
+                    importance of food safety in catering in..
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Define HACCP Food
+                    Safety System and its importance
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ml-4 mr-4 mb-4 flex justify-between mt-4">
+                <span
+                  class="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 border-amber-50 cursor-pointer"
+                  >More Info</span
+                >
+                <span
+                  class="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer"
+                  >Start Learning</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4 bg-white">
+          <div class="font-bold text-xl mb-2 text-black">
+            <p>
+              HACCP Food Safety System for Resturants and Other Catering
+              Services
+            </p>
+            <div class="flex justify-between mt-3">
+              <div class="text-gray-500 text-lg">
+                <i class="fa-regular fa-clock text-gray-500 text-lg"></i>
+                3-4 hrs
+              </div>
+              <div class="text-gray-500 text-lg">
+                <i class="fa-solid fa-graduation-cap text-gray-500 text-lg"></i>
+                89,221 learners
+              </div>
+            </div>
+            <div class="mt-3 text-lg">
+              <p class="underline text-gray-500 text-lg">
+                By mokhtar Harb Abd-El-Khalek
+              </p>
+            </div>
+            <div class="text-gray-500 text-lg mt-4 w-15 "> 
+              You Will Learn How To
+              <div>
+                <ul class="list-none space-y-2">
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Define the "catering
+                    industry" and its different type
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Discuss the
+                    importance of food safety in catering in..
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Define HACCP Food
+                    Safety System and its importance
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ml-4 mr-4 mb-4 flex justify-between mt-4">
+                <span
+                  class="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 border-amber-50 cursor-pointer"
+                  >More Info</span
+                >
+                <span
+                  class="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer"
+                  >Start Learning</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4 bg-white">
+          <div class="font-bold text-xl mb-2 text-black">
+            <p>
+              HACCP Food Safety System for Resturants and Other Catering
+              Services
+            </p>
+            <div class="flex justify-between mt-3">
+              <div class="text-gray-500 text-lg">
+                <i class="fa-regular fa-clock text-gray-500 text-lg"></i>
+                3-4 hrs
+              </div>
+              <div class="text-gray-500 text-lg">
+                <i class="fa-solid fa-graduation-cap text-gray-500 text-lg"></i>
+                89,221 learners
+              </div>
+            </div>
+            <div class="mt-3 text-lg">
+              <p class="underline text-gray-500 text-lg">
+                By mokhtar Harb Abd-El-Khalek
+              </p>
+            </div>
+            <div class="text-gray-500 text-lg mt-4 w-15">
+              You Will Learn How To
+              <div>
+                <ul class="list-none space-y-2">
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Define the "catering
+                    industry" and its different type
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Discuss the
+                    importance of food safety in catering in..
+                  </li>
+                  <li class="flex items-center">
+                    <span class="text-black mr-2">✔</span> Define HACCP Food
+                    Safety System and its importance
+                  </li>
+                </ul>
+              </div>
+
+              <div class="ml-4 mr-4 mb-4 flex justify-between mt-4">
+                <span
+                  class="inline-block bg-white rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 border-amber-50 cursor-pointer"
+                  >More Info</span
+                >
+                <span
+                  class="inline-block bg-green-600 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 cursor-pointer"
+                  >Start Learning</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative inline-block text-left lg: invisible md:visible sm:vis"
+    >
+      <div>
+        <button
+          type="button"
+          class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+          id="menu-button"
+          aria-expanded="true"
+          aria-haspopup="true"
+        >
+          Options
+          <svg
+            class="-mr-1 size-5 text-gray-400"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            aria-hidden="true"
+            data-slot="icon"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!--
+        Dropdown menu, show/hide based on menu state.
+    
+        Entering: "transition ease-out duration-100"
+          From: "transform opacity-0 scale-95"
+          To: "transform opacity-100 scale-100"
+        Leaving: "transition ease-in duration-75"
+          From: "transform opacity-100 scale-100"
+          To: "transform opacity-0 scale-95"
+      -->
+      <div></div>
     </div>
   </body>
-</html> 
+</html>
